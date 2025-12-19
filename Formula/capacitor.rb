@@ -7,7 +7,7 @@ class Capacitor < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/gimlet-io/capacitor/releases/download/0.14.0-rc.3/next-Darwin-arm64"
-      sha256 "d9726bb96b5aa90c9a85e001c6194415de57a7e2766b6e0498cfcc3c9767ee3a"
+      sha256 "7fac30917985b06d53dca9bf8103e936887fc294edd201eb4106523aa4596c1b"
     else
       odie "Only arm64 macOS builds are currently provided"
     end
@@ -16,7 +16,7 @@ class Capacitor < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gimlet-io/capacitor/releases/download/0.14.0-rc.3/next-Linux-x86_64"
-      sha256 "73bfee40409348b94a6b22c6ea5edadb4b7a02cf3dcf40b855c80342160d823b"
+      sha256 "1bd878f441e654f5d42c185a46ed5b2c642ee98276e1c535cac28ceb989961b5"
     else
       odie "Only x86_64 Linux builds are currently provided"
     end
